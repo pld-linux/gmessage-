@@ -34,7 +34,7 @@ commande, un fichier ou un pipe.
 %setup -q
 
 %build
-gettextize --copy --force
+%{__gettextize}
 %configure
 %{__make}
 
