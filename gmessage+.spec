@@ -39,9 +39,10 @@ commande, un fichier ou un pipe.
 %patch0 -p1
 
 %build
+rm -f missing
 %{__gettextize}
 %{__libtoolize}
-aclocal
+%{__aclocal}
 %{__autoconf}
 %{__automake}
 %configure
