@@ -26,7 +26,7 @@ gmessage+ is a clone of xmessage. I is used to display a message box
 with a text specified on the command line, a file or via a pipe.
 
 %description -l pl
-gmessage+ jest klonem xmessage. Mozna go wykorzystaæ do wy¶wietlania
+gmessage+ jest klonem xmessage. Mo¿na go wykorzystaæ do wy¶wietlania
 okienek z tekstem podanym z linii poleceñ, pliku lub potoku.
 
 %description -l fr
