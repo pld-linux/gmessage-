@@ -1,9 +1,10 @@
 Summary:	display a message (like xmessage)
 Name:		gmessage+
 Version:	0.15
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications/Networking
+Group(de):	X11/Applikationen/Netzwerkwesen
 Group(pl):	X11/Aplikacje/Sieciowe
 Source0:	http://ymettier.free.fr/gmsgp/download/%{name}-%{version}.tar.gz
 URL:		http://ymettier.free.fr/gmsgp/gmsgp.html
@@ -22,8 +23,8 @@ with a text specified on the command line, a file or via a pipe.
 
 %description -l pl
 gmessage+ jest klonem xmessage. Mozna go wykorzystaæ do wy¶wietlania
-okienek z tekstem przy pomocy lini komend z linii poleceñ, pliku 
-lub potoku.
+okienek z tekstem przy pomocy lini komend z linii poleceñ, pliku lub
+potoku.
 
 %description -l fr
 gmessage+ est un clone de xmessage. Il permet d'afficher un message
@@ -35,12 +36,12 @@ commande, un fichier ou un pipe.
 
 %build
 gettextize --copy --force
-LDFLAGS="-s"; export LDFLAGS
 %configure
 %{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
+
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
