@@ -6,12 +6,16 @@ Release:	3
 License:	GPL
 Group:		X11/Applications/Networking
 Source0:	http://ymettier.free.fr/gmsgp/download/%{name}-%{version}.tar.gz
+Patch0:		%{name}-ac_am.patch
 URL:		http://ymettier.free.fr/gmsgp/gmsgp.html
+BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRequires:	esound-devel
 BuildRequires:	gettext-devel
 BuildRequires:	gnome-libs-devel
 BuildRequires:	gtk+-devel
 BuildRequires:	imlib-devel
+BuildRequires:	libtool
 BuildRequires:	popt-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -32,9 +36,14 @@ commande, un fichier ou un pipe.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 %{__gettextize}
+%{__libtoolize}
+aclocal
+%{__autoconf}
+%{__automake}
 %configure
 %{__make}
 
@@ -44,8 +53,6 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-gzip -9nf README NEWS AUTHORS ChangeLog TODO
-
 %find_lang %{name}
 
 %clean
@@ -53,5 +60,5 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
-%doc *.gz
+%doc README NEWS AUTHORS ChangeLog TODO
 %attr(755,root,root) %{_bindir}/*
