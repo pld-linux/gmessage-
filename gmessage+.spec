@@ -20,6 +20,11 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 gmessage+ is a clone of xmessage. I is used to display a message box
 with a text specified on the command line, a file or via a pipe.
 
+%description -l pl
+gmessage+ jest klonem xmessage. Mozna go wykorzystaæ do wy¶wietlania
+okienek z tekstem przy pomocy lini komend z linii poleceñ, pliku 
+lub potoku.
+
 %description -l fr
 gmessage+ est un clone de xmessage. Il permet d'afficher un message
 dans une boite de dialogue. Ce message est spécifié via la ligne de
