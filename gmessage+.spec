@@ -1,7 +1,7 @@
 Summary:	display a message (like xmessage)
 Name:		gmessage+
 Version:	0.17
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications/Networking
 Group(de):	X11/Applikationen/Netzwerkwesen
