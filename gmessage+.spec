@@ -11,7 +11,6 @@ BuildRequires:	gettext-devel
 BuildRequires:	esound-devel
 BuildRequires:	gtk+-devel
 BuildRequires:	imlib-devel
-BuildRequires:	XFree86-devel
 BuildRequires:	popt-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
