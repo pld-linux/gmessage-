@@ -5,8 +5,6 @@ Version:	0.17
 Release:	3
 License:	GPL
 Group:		X11/Applications/Networking
-Group(de):	X11/Applikationen/Netzwerkwesen
-Group(pl):	X11/Aplikacje/Sieciowe
 Source0:	http://ymettier.free.fr/gmsgp/download/%{name}-%{version}.tar.gz
 URL:		http://ymettier.free.fr/gmsgp/gmsgp.html
 BuildRequires:	esound-devel
