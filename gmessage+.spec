@@ -26,8 +26,6 @@ une boite de dialogue. Ce message est spécifié via la ligne de commande, un
 fichier ou un pipe.
 
 %prep
-rm -rf $RPM_BUILD_ROOT
-
 %setup -q
 
 %build
