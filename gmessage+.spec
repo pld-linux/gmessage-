@@ -1,7 +1,8 @@
-Summary:	display a message (like xmessage)
+Summary:	Display a message (like xmessage)
+Summary(pl):	Program wy¶wietlaj±cy komunikat (podobny do xmessage)
 Name:		gmessage+
 Version:	0.17
-Release:	2
+Release:	3
 License:	GPL
 Group:		X11/Applications/Networking
 Group(de):	X11/Applikationen/Netzwerkwesen
@@ -24,8 +25,7 @@ with a text specified on the command line, a file or via a pipe.
 
 %description -l pl
 gmessage+ jest klonem xmessage. Mozna go wykorzystaæ do wy¶wietlania
-okienek z tekstem przy pomocy lini komend z linii poleceñ, pliku lub
-potoku.
+okienek z tekstem podanym z linii poleceñ, pliku lub potoku.
 
 %description -l fr
 gmessage+ est un clone de xmessage. Il permet d'afficher un message
