@@ -6,6 +6,7 @@ Release:	3
 License:	GPL
 Group:		X11/Applications/Networking
 Source0:	http://ymettier.free.fr/gmsgp/download/%{name}-%{version}.tar.gz
+# Source0-md5:	d4af8279cb37d3ad9b0bc6b25259e6de
 Patch0:		%{name}-ac_am.patch
 URL:		http://ymettier.free.fr/gmsgp/gmsgp.html
 BuildRequires:	autoconf
