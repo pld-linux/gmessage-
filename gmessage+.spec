@@ -19,7 +19,6 @@ BuildRequires:	libtool
 BuildRequires:	popt-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_prefix		/usr/X11R6
 
 %description
 gmessage+ is a clone of xmessage. I is used to display a message box
