@@ -1,15 +1,16 @@
 Summary:	display a message (like xmessage)
 Name:		gmessage+
 Version:	0.15
-Release:	2
+Release:	3
 License:	GPL
 Group:		X11/Applications/Networking
 Group(de):	X11/Applikationen/Netzwerkwesen
 Group(pl):	X11/Aplikacje/Sieciowe
 Source0:	http://ymettier.free.fr/gmsgp/download/%{name}-%{version}.tar.gz
 URL:		http://ymettier.free.fr/gmsgp/gmsgp.html
-BuildRequires:	gettext-devel
 BuildRequires:	esound-devel
+BuildRequires:	gettext-devel
+BuildRequires:	gnome-libs-devel
 BuildRequires:	gtk+-devel
 BuildRequires:	imlib-devel
 BuildRequires:	popt-devel
