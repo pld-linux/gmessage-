@@ -17,13 +17,13 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define		_prefix		/usr/X11R6
 
 %description
-gmessage+ is a clone of xmessage. I is used to display a message box with a
-text specified on the command line, a file or via a pipe.
+gmessage+ is a clone of xmessage. I is used to display a message box
+with a text specified on the command line, a file or via a pipe.
 
 %description -l fr
-gmessage+ est un clone de xmessage. Il permet d'afficher un message dans
-une boite de dialogue. Ce message est spécifié via la ligne de commande, un
-fichier ou un pipe.
+gmessage+ est un clone de xmessage. Il permet d'afficher un message
+dans une boite de dialogue. Ce message est spécifié via la ligne de
+commande, un fichier ou un pipe.
 
 %prep
 %setup -q
