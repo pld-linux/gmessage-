@@ -1,0 +1,30 @@
+diff -uNr gmessage+-0.17.orig/configure.in gmessage+-0.17/configure.in
+--- gmessage+-0.17.orig/configure.in	Sun Jan 21 16:00:20 2001
++++ gmessage+-0.17/configure.in	Sun Aug 11 21:33:45 2002
+@@ -27,7 +27,7 @@
+ 
+ ALL_LINGUAS="fr"
+ 
+-AM_GNOME_GETTEXT
++AM_GNU_GETTEXT
+ 
+ localedir=${datadir}/locale
+ AC_SUBST(localedir)
+diff -uNr gmessage+-0.17.orig/src/Makefile.am gmessage+-0.17/src/Makefile.am
+--- gmessage+-0.17.orig/src/Makefile.am	Sat May 20 18:25:47 2000
++++ gmessage+-0.17/src/Makefile.am	Sun Aug 11 21:34:04 2002
+@@ -20,14 +20,5 @@
+ 
+ netsend_SOURCES = netsend.c netsend.h
+ 
+-#ifdef HAVE_POPT
+-f2sd_LDFLAGS = $(LDFLAGS) `glib-config --libs` -lpopt $(INTLLIBS)
+-#else
+ f2sd_LDFLAGS = $(LDFLAGS) `gnome-config --libs gnome gnomeui` $(INTLLIBS)
+-#endif
+-
+-#ifdef HAVE_POPT
+-netsend_LDFLAGS = $(LDFLAGS) `glib-config --libs` -lpopt $(INTLLIBS)
+-#else
+ netsend_LDFLAGS = $(LDFLAGS) `gnome-config --libs gnome gnomeui` $(INTLLIBS)
+-#endif
