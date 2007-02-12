@@ -1,5 +1,5 @@
 Summary:	Display a message (like xmessage)
-Summary(pl):	Program wy¶wietlaj±cy komunikat (podobny do xmessage)
+Summary(pl.UTF-8):   Program wyÅ›wietlajÄ…cy komunikat (podobny do xmessage)
 Name:		gmessage+
 Version:	0.17
 Release:	3
@@ -25,13 +25,13 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 gmessage+ is a clone of xmessage. I is used to display a message box
 with a text specified on the command line, a file or via a pipe.
 
-%description -l pl
-gmessage+ jest klonem xmessage. Mo¿na go wykorzystaæ do wy¶wietlania
-okienek z tekstem podanym z linii poleceñ, pliku lub potoku.
+%description -l pl.UTF-8
+gmessage+ jest klonem xmessage. MoÅ¼na go wykorzystaÄ‡ do wyÅ›wietlania
+okienek z tekstem podanym z linii poleceÅ„, pliku lub potoku.
 
-%description -l fr
+%description -l fr.UTF-8
 gmessage+ est un clone de xmessage. Il permet d'afficher un message
-dans une boite de dialogue. Ce message est spécifié via la ligne de
+dans une boite de dialogue. Ce message est spÃ©cifiÃ© via la ligne de
 commande, un fichier ou un pipe.
 
 %prep
