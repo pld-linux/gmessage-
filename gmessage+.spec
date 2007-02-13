@@ -1,5 +1,5 @@
 Summary:	Display a message (like xmessage)
-Summary(pl.UTF-8):   Program wyświetlający komunikat (podobny do xmessage)
+Summary(pl.UTF-8):	Program wyświetlający komunikat (podobny do xmessage)
 Name:		gmessage+
 Version:	0.17
 Release:	3
